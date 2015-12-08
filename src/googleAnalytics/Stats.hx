@@ -84,19 +84,19 @@ class Stats {
 		#end
 
 		#if ios
-		visitor.setUserAgent('iOS'+version);
+		visitor.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3');
 		#elseif android
-		visitor.setUserAgent('Android'+version);
+		visitor.setUserAgent('Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19');
 		#elseif mac
-		visitor.setUserAgent('OS-X'+version);
+		visitor.setUserAgent('Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27');
 		#elseif tizen
 		visitor.setUserAgent("Tizen"+version);
 		#elseif blackberry
 		visitor.setUserAgent("BlackBerry"+version);
 		#elseif windows
-		visitor.setUserAgent("Windows"+version);
+		visitor.setUserAgent('Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36');
 		#elseif linux
-		visitor.setUserAgent("Linux"+version);
+		visitor.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Ubuntu/11.10 Chromium/27.0.1453.93 Chrome/27.0.1453.93 Safari/537.36');
 		#else
 		visitor.setUserAgent('-not-set-'+version);
 		#end
